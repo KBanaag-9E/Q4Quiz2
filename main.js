@@ -105,9 +105,9 @@ function gradingSS() {
 
 // determines the total average of all the subjects
 function gradingAll() {
-	var Scigrade = document.getElementById('subjectSci').value*1;
-	var Mgrade = document.getElementById('subjectM').value*1;
-	var SSgrade = document.getElementById('subjectSS').value*1;
+	var Scigrade = document.getElementById('subjectSci').value;
+	var Mgrade = document.getElementById('subjectM').value;
+	var SSgrade = document.getElementById('subjectSS').value;
 	var FullGrade = (Scigrade + Mgrade + SSgrade) / 3;
 	FullGrade = FullGrade.toFixed(2);
 

@@ -106,7 +106,7 @@ function gradingAll() {
 	var sci = document.getElementById('subjectSci').value;
 	var math = document.getElementById('subjectM').value;
 	var ss = document.getElementById('subjectSS').value;
-	var FullGrade = ((sci + math + ss) / 3).toFixed(2);
+	var FullGrade = (sci + math + ss) / 3;
 	
 	if (FullGrade >= 94 && FullGrade <= 100) {
 		window.alert(FullGrade + ' = Excellent');

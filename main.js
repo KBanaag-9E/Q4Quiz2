@@ -12,6 +12,9 @@ function subjectGrade() {
 			case "ss":
 				gradingSS();
 				break;
+			case "all":
+				gradingAll();
+				break;
 			default:
 				window.alert("Invalid Input");
 		}
@@ -95,5 +98,35 @@ function gradingSS() {
 		}
 		else {
 			document.getElementById('displaySS').innerHTML = 'Failed';
+		}
+}
+
+// determines the total average of all the subjects
+function gradingAll() {
+	var Sgrade = document.getElementById('subjectSci').value;
+	var Mgrade = document.getElementById('subjectM').value;
+	var SSgrade = document.getElementById('subjectSS').value;
+	var FullGrade = (Math.round((Sgrade + Mgrade + SSgrade) / 3)).toFixed(2);
+	
+	if (FullGrade >= 94 && FullGrade <= 100) {
+		window.alert(FullGrade + ' = Excellent');
+	}
+		else if (FullGrade >= 87 && FullGrade <= 93.99) {
+			window.alert(FullGrade + ' = Above Standard');
+		}
+		else if (FullGrade >= 80 && FullGrade <= 86.99) {
+			window.alert(FullGrade + ' = Standard');
+		}
+		else if (FullGrade >= 75 && FullGrade <= 79.99) {
+			window.alert(FullGrade + ' = Needs Improvement');
+		}
+		else if (FullGrade >= 70 && FullGrade <= 74.99) {
+			window.alert(FullGrade + ' = Poor');
+		}
+		else if (FullGrade <= 0) {
+			window.alert('Invalid Score');
+		}
+		else {
+			window.alert(FullGrade + ' = Failed');
 		}
 }

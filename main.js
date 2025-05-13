@@ -1,3 +1,5 @@
+// debugged with the assistance of chat gpt
+
 // determines which subject to grade
 function subjectGrade() {
 	var subjectCategory = document.getElementById('subjectEntry').value;
@@ -107,6 +109,11 @@ function gradingAll() {
 	var Mgrade = document.getElementById('subjectM').value*1;
 	var SSgrade = document.getElementById('subjectSS').value*1;
 	var FullGrade = (Scigrade + Mgrade + SSgrade) / 3;
+	FullGrade = FullGrade.toFixed(2);
+
+	if (isNaN(Scigrade) || isNaN(Mgrade) || isNaN(SSgrade)) {
+		window.alert("Please enter valid grades for all subjects.");
+	}
 	
 	if (FullGrade >= 94 && FullGrade <= 100) {
 		window.alert(FullGrade + ' = Excellent');

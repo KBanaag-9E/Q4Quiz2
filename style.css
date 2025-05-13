@@ -1,0 +1,28 @@
+* {
+	margin: 10px;
+}
+
+body {
+	font-family: fredoka;
+	background-color: #C9E4CA;
+	text-align: center;
+}
+
+div {
+	background-color: #87BBA2;
+	border-radius: 10px;
+}
+
+a {
+	color: #3B6064;
+}
+
+.card {
+	display: inline-block;
+	width: 30vw;
+	background-color: #C9E4CA;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+}

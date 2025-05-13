@@ -36,7 +36,7 @@ function gradingSci() {
 		else if (Sgrade >= 70 && Sgrade <= 74.99) {
 			document.getElementById('displaySci').innerHTML = 'Poor';
 		}
-		else if (Sgrade < 0) {
+		else if (Sgrade <= 0) {
 			document.getElementById('displaySci').innerHTML = 'Invalid Score';
 		}
 		else {
@@ -63,7 +63,7 @@ function gradingM() {
 		else if (Mgrade >= 70 && Mgrade <= 74.99) {
 			document.getElementById('displayM').innerHTML = 'Poor';
 		}
-		else if (Mgrade < 0) {
+		else if (Mgrade <= 0) {
 			document.getElementById('displayM').innerHTML = 'Invalid Score';
 		}
 		else {
@@ -90,7 +90,7 @@ function gradingSS() {
 		else if (SSgrade >= 70 && SSgrade <= 74.99) {
 			document.getElementById('displaySS').innerHTML = 'Poor';
 		}
-		else if (SSgrade < 0) {
+		else if (SSgrade <= 0) {
 			document.getElementById('displaySS').innerHTML = 'Invalid Score';
 		}
 		else {

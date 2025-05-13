@@ -16,7 +16,7 @@ function subjectGrade() {
 				gradingSS();
 				break;
 			case "all":
-				gradingAll();
+				gradingAll() + gradingM() + gradingSci() + gradingSS();
 				break;
 			default:
 				window.alert("Invalid Input");
